@@ -2,13 +2,13 @@
 Robust Boolean matrix factorization via EM_BMF
 The code is completely process-oriented. Sorry for contaminating your name space.
 
-Dependency: (I think it will work as long as Annaconda on Python3 is installed)
-numpy -- 1.11.3
-scipy -- 1.1.0
-numba -- 0.40.0
-
+Dependency: (I think it will work as long as Annaconda on Python3 is installed)//
+numpy -- 1.11.3//
+scipy -- 1.1.0//
+numba -- 0.40.0//
+////
 Example usage:
-
+////
 def prob_synthesis(shape, latent_size, P, noise_p=0.0):
     '''
     In this synthesis, the probability of X was sampled from the joint probability of the latent factors.
