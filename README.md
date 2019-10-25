@@ -1,9 +1,15 @@
-# EM_BMF
+# Installing EM_BMF (BEM)
 
-Robust Boolean matrix factorization via EM_BMF
-The code is completely process-oriented. Sorry for contaminating your name space.
+Use pip install. You can also visit https://pypi.org/project/boolem/0.0.1/
 
-Dependency: (I think it will work as long as Annaconda on Python3 is installed)
+'''
+pip install boolem==0.0.1
+'''
+
+
+# Dependency:
+
+(I think it will work as long as Annaconda on Python3 is installed)
 
 numpy -- 1.11.3
 
@@ -11,9 +17,7 @@ scipy -- 1.1.0
 
 numba -- 0.40.0
 
-
-
-Example usage:
+# Example usage:
 
 ```python
 import numpy as np
