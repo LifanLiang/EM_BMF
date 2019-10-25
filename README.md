@@ -2,9 +2,9 @@
 
 Use pip install. You can also visit https://pypi.org/project/boolem/0.0.1/
 
-'''
+```
 pip install boolem==0.0.1
-'''
+```
 
 
 # Dependency:
