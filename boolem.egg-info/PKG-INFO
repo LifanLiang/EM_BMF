@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: boolem
-Version: 0.0.1
+Version: 0.0.3
 Summary: Boolean matrix factorization on RNA expression data
 Home-page: https://github.com/LifanLiang/EM_BMF
 Author: Lifan Liang

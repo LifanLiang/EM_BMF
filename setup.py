@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="boolem",
-    version="0.0.1",
+    version="0.0.3",
     author="Lifan Liang",
     author_email="lil115@pitt.edu",
     description="Boolean matrix factorization on RNA expression data",
