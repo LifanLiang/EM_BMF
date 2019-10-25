@@ -1,9 +1,9 @@
 # Installing EM_BMF (BEM)
 
-Use pip install. You can also visit https://pypi.org/project/boolem/0.0.1/
+Use pip install. You can also visit https://pypi.org/project/boolem/0.0.3/
 
 ```
-pip install boolem==0.0.1
+pip install boolem==0.0.3
 ```
 
 
@@ -21,7 +21,7 @@ numba -- 0.40.0
 
 ```python
 import numpy as np
-from boolem import boolem
+from boolem import BEM
 
 def synthesis(shape, latent_size, P, noise_p=0.0):
     '''
@@ -50,7 +50,7 @@ X_noisy, X, a, b = synthesis((1000, 1000), 4, np.random.uniform(0.2,0.5,4), nois
 # beta: the beta for the beta prior. Default is recommended.
 # mask: the matrix with the same shape as X. 0 means the correponding element in X is missing.
 # max_iter: the maximum iteration for gradient-based optimization
-model = boolem(np.int8(X_noisy), latent_size=5, alpha=0.95, beta=0.95, mask=np.ones(X.shape, dtype=np.int8), max_iter=200)
+model = BEM(np.int8(X_noisy), latent_size=5, alpha=0.95, beta=0.95, mask=np.ones(X.shape, dtype=np.int8), max_iter=200)
 model.run()
 
 # After running factorization, the model will contain several new attributes as the output:
