@@ -1,6 +1,6 @@
 # Installing EM_BMF (BEM)
 
-Use pip install. You can also visit https://pypi.org/project/boolem/0.0.4/
+Use pip install. You can also visit https://pypi.org/project/boolem/0.0.5/
 
 ```
 pip install boolem==0.0.3
@@ -50,7 +50,7 @@ X_noisy, X, a, b = synthesis((1000, 1000), 4, np.random.uniform(0.2,0.5,4), nois
 # beta: the beta for the beta prior. Default is recommended.
 # mask: the matrix with the same shape as X. 0 means the correponding element in X is missing.
 # max_iter: the maximum iteration for gradient-based optimization
-model = BEM(np.int8(X_noisy), latent_size=5, alpha=0.95, beta=0.95, mask=np.ones(X.shape, dtype=np.int8), max_iter=200)
+model = BEM(np.int8(X_noisy), latent_size=4, alpha=0.95, beta=0.95, mask=np.ones(X.shape, dtype=np.int8), max_iter=200)
 model.run()
 
 # After running factorization, the model will contain several new attributes as the output:
@@ -59,7 +59,7 @@ model.run()
 # model.X_hat: reconstructed Boolean matrix from U and Z. Note that values in X_hat is continuous within [0,1]
 print('Reconstruction error:', np.abs((model.X_hat>0.5)-X).mean())
 
-# You can also select the right number of factors by looking at the AIC
+# You can also try to find the right number of factors by searching for the minimum AIC
 model.AIC
 
 ```
