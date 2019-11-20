@@ -58,4 +58,8 @@ model.run()
 # model.Z: the latent facotr with the shape (latent_size, X.shape[1])
 # model.X_hat: reconstructed Boolean matrix from U and Z. Note that values in X_hat is continuous within [0,1]
 print('Reconstruction error:', np.abs((model.X_hat>0.5)-X).mean())
+
+# You can also select the right number of factors by looking at the AIC
+model.AIC
+
 ```
