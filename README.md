@@ -3,7 +3,7 @@
 Use pip install. You can also visit https://pypi.org/project/boolem/0.0.5/
 
 ```
-pip install boolem==0.0.3
+pip install boolem==0.0.5
 ```
 
 
