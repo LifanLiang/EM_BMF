@@ -53,6 +53,7 @@ class BEM:
         self.eps_hat = eps
         self.loss_trace = loss_trace
         self.X_hat = self.reconstruct(U, Z)
+        self.AIC = 2 * np.sum(self.X.shape) * self.latent_size + 2 * self.loss_trace
 
     @staticmethod
     @jit('float64[:,:](float64[:,:], float64[:,:])', nopython=True, nogil=True, parallel=True)
