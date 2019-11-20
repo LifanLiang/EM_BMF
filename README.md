@@ -1,6 +1,6 @@
 # Installing EM_BMF (BEM)
 
-Use pip install. You can also visit https://pypi.org/project/boolem/0.0.3/
+Use pip install. You can also visit https://pypi.org/project/boolem/0.0.4/
 
 ```
 pip install boolem==0.0.3
